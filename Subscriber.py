@@ -18,6 +18,7 @@ def createSocket() -> zmq.Socket:
 	
 	socket.connect(address)
 	socket.subscribe(Constants.TOPIC)
+	socket.subscribe(Constants.SEPARATOR_TOPIC)
 	
 	return socket
 
